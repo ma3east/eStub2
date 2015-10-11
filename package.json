@@ -1,0 +1,11 @@
+{
+  "name": "estub_js",
+  "version": "1.0.0",
+  "description": "online web app to record events have attended",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrea Mckenzie",
+  "license": "ISC"
+}
