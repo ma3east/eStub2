@@ -1,0 +1,28 @@
+{
+  "name": "eStub2",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ma3east/eStub2",
+  "authors": [
+    "Andrea Mckenzie"
+  ],
+  "description": "A site to record events have attended",
+  "moduleType": [
+    "node"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-resource": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "animate.css": "~3.4.0",
+    "bootstrap": "~3.3.5"
+  }
+}

@@ -1,0 +1,1 @@
+//here will setup angular modules for the front end
