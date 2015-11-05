@@ -3,6 +3,7 @@ node_modules/
 
 #Front-end dependencies
 public/libs
+public/bower_components
 
 
 *.DS_Store

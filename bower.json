@@ -6,9 +6,6 @@
     "Andrea Mckenzie"
   ],
   "description": "A site to record events have attended",
-  "moduleType": [
-    "node"
-  ],
   "license": "Apache-2.0",
   "ignore": [
     "**/.*",
@@ -18,6 +15,9 @@
     "test",
     "tests"
   ],
+  "install": {
+      "path": "public/libs"
+    },
   "dependencies": {
     "angular": "~1.4.7",
     "angular-resource": "~1.4.7",
