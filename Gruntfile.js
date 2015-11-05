@@ -8,8 +8,17 @@ module.exports = function(grunt) {
       options: {
         reporter: require('jshint-stylish')
       },
-          // when this task is run, lint the Gruntfile and all js files in src
-          build: ['Gruntfile.js', 'server.js', 'public/js/**/*.js', 'app/**/*.js'] //or public if we are going to use that as folder name
+          // when this task is run, lint the Gruntfile and all js files ilisted
+          build: ['Gruntfile.js', 'server.js', 'public/js/**/*.js', 'public/js/app.js','app/**/*.js', 'config/db.js']
+        },
+
+        csslint: {
+          strict: {
+            options: {
+              "import": 2
+            }
+          },
+          files: ['public/css/style.css']
         },
 
         autoprefixer: {
@@ -18,21 +27,19 @@ module.exports = function(grunt) {
           },
           build: {
             files: {
-                // e.g 'dist/js/magic.min.js': 'src/js/magic.js'
-                // another e.g. 'build/style.css': 'style.css'
-                'build/style.css': 'style.css'
+                'public/css/build/style.css': 'public/css/style.css'
               }
             }
           },
 
           watch: {
             styles: {
-              files: ['public/css/*.css' 'style.css'], 
+              files: ['public/css/style.css'], 
               tasks: ['autoprefixer', 'csslint'] 
             },
             // for scripts, run jshint
             scripts: { 
-              files: 'public/js/*.js', 
+              files: ['Gruntfile.js', 'server.js', 'public/js/**/*.js', 'public/js/app.js','app/**/*.js', 'config/db.js'],
               tasks: ['jshint'] 
             } 
           },
@@ -51,9 +58,7 @@ module.exports = function(grunt) {
             tasks: ['nodemon', 'watch']
           }   
 
-
       }); //closes grunt initconfig
-
 
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-autoprefixer');
