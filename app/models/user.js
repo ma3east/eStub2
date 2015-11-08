@@ -4,6 +4,7 @@ var Schema = mongoose.Schema;
 
 var UserSchema = new mongoose.Schema({
   name: String,
+  dob: Date,
   email: { type: String, required: true, unique: true }
 });
 

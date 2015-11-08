@@ -8,7 +8,7 @@ router.use('/api/events', require('./events'));
 
 // route to handle all angular requests
 router.get('/', function(req, res) {
-  res.sendfile('./public/index.html');
+  res.sendFile('./public/index.html');
   });
 
 module.exports = router;
