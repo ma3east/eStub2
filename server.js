@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve all js, css, html from the public folder
-app.use(express.static(__dirname + './public'));
+app.use(express.static(__dirname + '/public'));
 
 app.use(methodOverride('X-HTTP-Method-Override'));
 
